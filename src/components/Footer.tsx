@@ -1,5 +1,5 @@
 import React from 'react';
-import { Shield, Github, Twitter, Linkedin, Mail } from 'lucide-react';
+import { Shield, Github, Linkedin, Mail, Instagram } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
@@ -12,16 +12,16 @@ const Footer: React.FC = () => {
           </div>
           
           <div className="flex space-x-4">
-            <a href="#" className="p-2 bg-slate-800 rounded-full hover:bg-slate-700 transition-colors">
+            <a href="https://github.com/odaysec" target="_blank" rel="noopener noreferrer" className="p-2 bg-slate-800 rounded-full hover:bg-slate-700 transition-colors">
               <Github className="h-5 w-5 text-slate-300" />
             </a>
-            <a href="#" className="p-2 bg-slate-800 rounded-full hover:bg-slate-700 transition-colors">
-              <Twitter className="h-5 w-5 text-slate-300" />
+            <a href="https://instagram.com/youryreborn" target="_blank" rel="noopener noreferrer" className="p-2 bg-slate-800 rounded-full hover:bg-slate-700 transition-colors">
+              <Instagram className="h-5 w-5 text-slate-300" />
             </a>
-            <a href="#" className="p-2 bg-slate-800 rounded-full hover:bg-slate-700 transition-colors">
+            <a href="https://www.linkedin.com/in/securewithandri/" target="_blank" rel="noopener noreferrer" className="p-2 bg-slate-800 rounded-full hover:bg-slate-700 transition-colors">
               <Linkedin className="h-5 w-5 text-slate-300" />
             </a>
-            <a href="#" className="p-2 bg-slate-800 rounded-full hover:bg-slate-700 transition-colors">
+            <a href="mailto:github@zerodaysec.org" className="p-2 bg-slate-800 rounded-full hover:bg-slate-700 transition-colors">
               <Mail className="h-5 w-5 text-slate-300" />
             </a>
           </div>
