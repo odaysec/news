@@ -16,6 +16,21 @@ const QuoteCard: React.FC<QuoteCardProps> = ({ quote, isSelected, onClick }) => 
     onClick();
   };
 
+  // Function to convert markdown-style bold to HTML
+  const formatContent = (text: string) => {
+    return text.split('\n').map((paragraph, index) => {
+      // Replace **text** with <strong>text</strong>
+      const formattedText = paragraph.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+      return (
+        <p 
+          key={index} 
+          className="mb-4 last:mb-0"
+          dangerouslySetInnerHTML={{ __html: formattedText }}
+        />
+      );
+    });
+  };
+
   return (
     <div 
       className={`bg-slate-800/70 rounded-xl border border-slate-700 overflow-hidden transition-all duration-300
@@ -52,9 +67,9 @@ const QuoteCard: React.FC<QuoteCardProps> = ({ quote, isSelected, onClick }) => 
         </div>
         
         <div className={`overflow-hidden transition-all duration-500 ${expanded ? 'max-h-[2000px] opacity-100' : 'max-h-32 opacity-80'}`}>
-          <p className="text-slate-300 leading-relaxed whitespace-pre-line">
-            {quote.content}
-          </p>
+          <div className="text-slate-300 leading-relaxed">
+            {formatContent(quote.content)}
+          </div>
           
           {expanded && (
             <div className="mt-6 pt-4 border-t border-slate-700/50 flex justify-between items-center">
