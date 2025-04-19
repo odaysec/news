@@ -87,7 +87,7 @@ Ketika kita berbicara tentang "ethical hacking" atau "penetration testing", kata
     author: "Seorang pengamat teknologi, dari balik layar",
     date: "Desember 20, 2023",
     tags: ["Education", "Cybersecurity", "Programming", "Ethics"],
-    content: `Halo komunitas Reddit yang saya hormati,
+    content: `Halo komunitas Siber yang saya hormati,
 
 Saya ingin menyampaikan sedikit opini dan pandangan pribadi berdasarkan pengamatan yang saya lakukan terhadap fenomena yang sedang marak terjadi di Indonesia—khususnya dalam dunia teknologi, coding, dan keamanan siber (cybersecurity).
 
